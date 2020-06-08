@@ -7,13 +7,13 @@ title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
+author: 左小波
+language: zh-CN
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://123.57.1.94
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -93,11 +93,10 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
-
+theme: hexo-theme-next-master
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: https://github.com/zuohahaha/myBlog.git
-  branch: master
+ # type: git
+ # repo: https://github.com/zuohahaha/myBlog.git
+  #branch: master
