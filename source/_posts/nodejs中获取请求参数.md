@@ -6,6 +6,7 @@
 > 需引入body-parser
 
     接收post传值
+
 <!--more-->
 ### 2. req.query
 > nodejs自带，无需引入
