@@ -4,6 +4,7 @@ date: 2020-06-12 16:44:00
 tags: js库
 ---
 
+
 1. 引入js
 ```
 <script src="js/dropload.js" type="text/javascript" charset="utf-8"></script>
@@ -84,3 +85,8 @@ tags: js库
     });
 ```
 [API地址](https://github.com/ximan/dropload)
+
+
+#### 遇到了一个问题，第一次下拉正常，第二次无法下拉
+
+获取到数据以后，innerHtml的节点不能是dropload绑定的节点，要是dropload绑定节点的子节点
