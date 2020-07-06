@@ -74,3 +74,73 @@ x-webkit-airplay="allow"
 ```
 x5-video-player-fullscreen:"true"
 ```
+
+
+videojs 事件汇总
+
+// 监听videojs加载完成
+```
+videojs("my-video").ready(function() {
+	console.log("加载完毕")
+	var myPlayer = this;
+	myPlayer.play();
+
+
+	this.on("loadstart", function() {
+		console.log("开始请求数据 ");
+	})
+	this.on("progress", function() {
+		console.log("正在请求数据 ");
+	})
+	this.on("loadedmetadata", function() {
+		console.log("获取资源长度完成 ")
+	})
+	this.on("canplaythrough", function() {
+		console.log("视频源数据加载完成")
+	})
+	this.on("waiting", function() {
+		console.log("等待数据")
+	});
+	this.on("play", function() {
+		console.log("视频开始播放")
+	});
+	this.on("playing", function() {
+		console.log("视频播放中")
+	});
+	this.on("pause", function() {
+		console.log("视频暂停播放")
+	});
+	this.on("ended", function() {
+		console.log("视频播放结束");
+	});
+	this.on("error", function() {
+		console.log("加载错误")
+	});
+	this.on("seeking", function() {
+		console.log("视频跳转中");
+	})
+	this.on("seeked", function() {
+		console.log("视频跳转结束");
+	})
+	this.on("ratechange", function() {
+		console.log("播放速率改变")
+	});
+	this.on("timeupdate", function() {
+		console.log("播放时长改变");
+	})
+	this.on("volumechange", function() {
+		console.log("音量改变");
+	})
+	this.on("stalled", function() {
+		console.log("网速异常");
+	})
+});
+```
+
+获取当前时长以及总时长
+
+```
+console.log("当前播放到：",myPlayer.cache_.currentTime)
+console.log("当前总时长：",myPlayer.cache_.duration)
+
+```

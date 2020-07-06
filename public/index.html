@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"123.57.1.94","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"123.57.1.94","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="做一个平凡而不平庸的人">
@@ -116,6 +116,11 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
@@ -144,6 +149,298 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://123.57.1.94/2020/07/06/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="左小波">
+      <meta itemprop="description" content="做一个平凡而不平庸的人">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="码农">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/06/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="post-title-link" itemprop="url">正则表达式</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-07-06 13:43:19 / 修改时间：13:43:25" itemprop="dateCreated datePublished" datetime="2020-07-06T13:43:19+08:00">2020-07-06</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>单字符</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>正则表达式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>换行符</td>
+<td>\n</td>
+</tr>
+<tr>
+<td>换页符</td>
+<td>\f</td>
+</tr>
+<tr>
+<td>回车符</td>
+<td>\r</td>
+</tr>
+<tr>
+<td>空白符</td>
+<td>\s</td>
+</tr>
+<tr>
+<td>制表符</td>
+<td>\t</td>
+</tr>
+<tr>
+<td>垂直制表符</td>
+<td>\v</td>
+</tr>
+<tr>
+<td>回退符</td>
+<td>[\b]</td>
+</tr>
+</tbody></table>
+<p>多字符</p>
+<table>
+<thead>
+<tr>
+<th>匹配</th>
+<th>正则表达式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>除换行之外</td>
+<td>.</td>
+</tr>
+<tr>
+<td>数字[0-9]</td>
+<td>\d</td>
+</tr>
+<tr>
+<td>除[0-9]</td>
+<td>\D</td>
+</tr>
+<tr>
+<td>数字字母下划线[a-zA-Z0-9_]</td>
+<td>\w</td>
+</tr>
+<tr>
+<td>非数字字母下划线</td>
+<td>\W</td>
+</tr>
+<tr>
+<td>空白字符</td>
+<td>\s</td>
+</tr>
+<tr>
+<td>非空白字符</td>
+<td>\S</td>
+</tr>
+</tbody></table>
+<p>次数</p>
+<table>
+<thead>
+<tr>
+<th>匹配</th>
+<th>正则表达式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0次或1次</td>
+<td>?</td>
+</tr>
+<tr>
+<td>0次或多次</td>
+<td>*</td>
+</tr>
+<tr>
+<td>1次或多次</td>
+<td>+</td>
+</tr>
+<tr>
+<td>特定次数</td>
+<td>{n},{min,max}</td>
+</tr>
+</tbody></table>
+<p>边界</p>
+<table>
+<thead>
+<tr>
+<th>匹配</th>
+<th>正则表达式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单词边界</td>
+<td>\b</td>
+</tr>
+<tr>
+<td>非单词边界</td>
+<td>\B</td>
+</tr>
+<tr>
+<td>字符串边界</td>
+<td>^开始 $结尾</td>
+</tr>
+<tr>
+<td>多行</td>
+<td>m</td>
+</tr>
+<tr>
+<td>忽略大小写</td>
+<td>i</td>
+</tr>
+<tr>
+<td>全局模式</td>
+<td>g</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://123.57.1.94/2020/07/06/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="左小波">
+      <meta itemprop="description" content="做一个平凡而不平庸的人">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="码农">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/06/vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" class="post-title-link" itemprop="url">vue生命周期</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-07-06 13:42:29 / 修改时间：13:42:50" itemprop="dateCreated datePublished" datetime="2020-07-06T13:42:29+08:00">2020-07-06</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <table>
+<thead>
+<tr>
+<th>钩子函数</th>
+<th>发生什么</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>beforeCreate</td>
+<td>初始化vue默认生命周期函数和默认事件</td>
+</tr>
+<tr>
+<td>created</td>
+<td>data、methods初始化完毕</td>
+</tr>
+<tr>
+<td>beforeMount</td>
+<td>模板在内存中等待渲染到页面</td>
+</tr>
+<tr>
+<td>mounted</td>
+<td>vue初始化完毕，已经将Dom渲染到页面</td>
+</tr>
+<tr>
+<td>beforeUpdate</td>
+<td>页面dom还是旧的，data中的数据是新的</td>
+</tr>
+<tr>
+<td>更新之间</td>
+<td>执行diff算法，将最新data生成一个dom树到内存中，然后将这个dom树跟页面dom对比，差量更新dom渲染到页面</td>
+</tr>
+<tr>
+<td>updated</td>
+<td>页面dom及data都是新的</td>
+</tr>
+<tr>
+<td>beforeDestroy</td>
+<td>data、methods可用</td>
+</tr>
+<tr>
+<td>destroyed</td>
+<td>data、methods不可用</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -536,10 +833,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-06-17 15:40:18 / 修改时间：15:40:28" itemprop="dateCreated datePublished" datetime="2020-06-17T15:40:18+08:00">2020-06-17</time>
+              <time title="创建时间：2020-06-17 15:40:18" itemprop="dateCreated datePublished" datetime="2020-06-17T15:40:18+08:00">2020-06-17</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-03 09:55:30" itemprop="dateModified" datetime="2020-07-03T09:55:30+08:00">2020-07-03</time>
+              </span>
 
           
 
@@ -575,6 +878,13 @@
 <p>是否支持全屏</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x5-video-player-fullscreen:&quot;true&quot;</span><br></pre></td></tr></table></figure>
 
+
+<p>videojs 事件汇总</p>
+<p>// 监听videojs加载完成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">videojs(&quot;my-video&quot;).ready(function() &#123;</span><br><span class="line">	console.log(&quot;加载完毕&quot;)</span><br><span class="line">	var myPlayer &#x3D; this;</span><br><span class="line">	myPlayer.play();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	this.on(&quot;loadstart&quot;, function() &#123;</span><br><span class="line">		console.log(&quot;开始请求数据 &quot;);</span><br><span class="line">	&#125;)</span><br><span class="line">	this.on(&quot;progress&quot;, function() &#123;</span><br><span class="line">		console.log(&quot;正在请求数据 &quot;);</span><br><span class="line">	&#125;)</span><br><span class="line">	this.on(&quot;loadedmetadata&quot;, function() &#123;</span><br><span class="line">		console.log(&quot;获取资源长度完成 &quot;)</span><br><span class="line">	&#125;)</span><br><span class="line">	this.on(&quot;canplaythrough&quot;, function() &#123;</span><br><span class="line">		console.log(&quot;视频源数据加载完成&quot;)</span><br><span class="line">	&#125;)</span><br><span class="line">	this.on(&quot;waiting&quot;, function() &#123;</span><br><span class="line">		console.log(&quot;等待数据&quot;)</span><br><span class="line">	&#125;);</span><br><span class="line">	this.on(&quot;play&quot;, function() &#123;</span><br><span class="line">		console.log(&quot;视频开始播放&quot;)</span><br><span class="line">	&#125;);</span><br><span class="line">	this.on(&quot;playing&quot;, function() &#123;</span><br><span class="line">		console.log(&quot;视频播放中&quot;)</span><br><span class="line">	&#125;);</span><br><span class="line">	this.on(&quot;pause&quot;, function() &#123;</span><br><span class="line">		console.log(&quot;视频暂停播放&quot;)</span><br><span class="line">	&#125;);</span><br><span class="line">	this.on(&quot;ended&quot;, function() &#123;</span><br><span class="line">		console.log(&quot;视频播放结束&quot;);</span><br><span class="line">	&#125;);</span><br><span class="line">	this.on(&quot;error&quot;, function() &#123;</span><br><span class="line">		console.log(&quot;加载错误&quot;)</span><br><span class="line">	&#125;);</span><br><span class="line">	this.on(&quot;seeking&quot;, function() &#123;</span><br><span class="line">		console.log(&quot;视频跳转中&quot;);</span><br><span class="line">	&#125;)</span><br><span class="line">	this.on(&quot;seeked&quot;, function() &#123;</span><br><span class="line">		console.log(&quot;视频跳转结束&quot;);</span><br><span class="line">	&#125;)</span><br><span class="line">	this.on(&quot;ratechange&quot;, function() &#123;</span><br><span class="line">		console.log(&quot;播放速率改变&quot;)</span><br><span class="line">	&#125;);</span><br><span class="line">	this.on(&quot;timeupdate&quot;, function() &#123;</span><br><span class="line">		console.log(&quot;播放时长改变&quot;);</span><br><span class="line">	&#125;)</span><br><span class="line">	this.on(&quot;volumechange&quot;, function() &#123;</span><br><span class="line">		console.log(&quot;音量改变&quot;);</span><br><span class="line">	&#125;)</span><br><span class="line">	this.on(&quot;stalled&quot;, function() &#123;</span><br><span class="line">		console.log(&quot;网速异常&quot;);</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>获取当前时长以及总时长</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">console.log(&quot;当前播放到：&quot;,myPlayer.cache_.currentTime)</span><br><span class="line">console.log(&quot;当前总时长：&quot;,myPlayer.cache_.duration)</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -718,156 +1028,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://123.57.1.94/2020/06/09/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BC%9A%E5%8F%91%E8%B5%B7options%E8%AF%B7%E6%B1%82/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="左小波">
-      <meta itemprop="description" content="做一个平凡而不平庸的人">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="码农">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/09/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BC%9A%E5%8F%91%E8%B5%B7options%E8%AF%B7%E6%B1%82/" class="post-title-link" itemprop="url">为什么浏览器会发起options请求</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-06-09 10:14:05 / 修改时间：10:14:37" itemprop="dateCreated datePublished" datetime="2020-06-09T10:14:05+08:00">2020-06-09</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h4 id="当浏览器发起复杂请求，浏览器会先对服务器发起一次预检请求，也就是options，确定服务器是否允许跨域，如果允许，浏览器会发起第二次请求。"><a href="#当浏览器发起复杂请求，浏览器会先对服务器发起一次预检请求，也就是options，确定服务器是否允许跨域，如果允许，浏览器会发起第二次请求。" class="headerlink" title="当浏览器发起复杂请求，浏览器会先对服务器发起一次预检请求，也就是options，确定服务器是否允许跨域，如果允许，浏览器会发起第二次请求。"></a>当浏览器发起复杂请求，浏览器会先对服务器发起一次预检请求，也就是options，确定服务器是否允许跨域，如果允许，浏览器会发起第二次请求。</h4><h5 id="简单请求："><a href="#简单请求：" class="headerlink" title="简单请求："></a>简单请求：</h5><blockquote>
-<p>满足以下2个条件</p>
-</blockquote>
-<p>条件一，请求方法是以下方法之一</p>
-<ul>
-<li>HEAD</li>
-<li>POST</li>
-<li>GET</li>
-</ul>
-<p>条件二，头信息不超过以下几种字段</p>
-<ul>
-<li>Accept</li>
-<li>Accept-Language</li>
-<li>Content-Language</li>
-<li>Last-Event-ID</li>
-<li>Content-Type：只限于三个值application/x-www-form-urlencoded、multipart/form-data、text/plain</li>
-</ul>
-<h5 id="复杂请求："><a href="#复杂请求：" class="headerlink" title="复杂请求："></a>复杂请求：</h5><blockquote>
-<p>非简单请求</p>
-</blockquote>
-<h6 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h6><p><a href="https://mp.weixin.qq.com/s/uVgoaejZ9Iymbrvc9GECWQ" target="_blank" rel="noopener">面试官：说说你对 options 请求的理解</a></p>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/OPTIONS" target="_blank" rel="noopener">MDN参考链接</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://123.57.1.94/2020/06/08/nodejs%E4%B8%AD%E8%8E%B7%E5%8F%96%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="左小波">
-      <meta itemprop="description" content="做一个平凡而不平庸的人">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="码农">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/08/nodejs%E4%B8%AD%E8%8E%B7%E5%8F%96%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0/" class="post-title-link" itemprop="url">nodejs中获取请求参数</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-06-08 13:21:46 / 修改时间：15:23:05" itemprop="dateCreated datePublished" datetime="2020-06-08T13:21:46+08:00">2020-06-08</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="nodejs中获取请求参数"><a href="#nodejs中获取请求参数" class="headerlink" title="nodejs中获取请求参数"></a>nodejs中获取请求参数</h1><p><strong>req.body、req.query、req.params、req.param()</strong></p>
-<h3 id="1-req-body"><a href="#1-req-body" class="headerlink" title="1. req.body"></a>1. req.body</h3><blockquote>
-<p>需引入body-parser</p>
-</blockquote>
-<pre><code>接收post传值</code></pre>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/06/08/nodejs%E4%B8%AD%E8%8E%B7%E5%8F%96%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -937,7 +1097,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -975,7 +1135,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">左小波</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
 
         
@@ -1001,7 +1161,7 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
