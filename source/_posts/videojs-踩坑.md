@@ -1,7 +1,7 @@
 ---
 title: '''videojs-踩坑'''
 date: 2020-06-17 15:40:18
-tags:
+tags: 经验
 ---
 
 初始化videojs
